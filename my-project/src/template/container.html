@@ -1,0 +1,13 @@
+<div id="app">
+    <el-menu  :router="true" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+        <el-menu-item index="1" :route="{path:'/home'}">处理中心</el-menu-item>
+        <el-submenu index="2">
+            <template slot="title">我的工作台</template>
+            <el-menu-item index="2-1" :route="{path:'/alertModel'}">弹出层</el-menu-item>
+            <el-menu-item index="2-2" :route="{path:'/fetchData'}">ajax数据获取</el-menu-item>
+            <el-menu-item index="2-3" :route="{path:'/form'}">表单</el-menu-item>
+        </el-submenu>
+        <el-menu-item index="3" ><a href="http://www.baidu.com" target="_blank">订单管理(外部链接)</a></el-menu-item>
+    </el-menu>
+    <router-view class="view"></router-view>
+</div>
