@@ -36,6 +36,9 @@ new Vue({
             router.push("huhai")
         }
     },
+    mounted:()=>{
+        document.getElementById("loading").style.display="none"
+    },
     template: require("./template/container.html")
 });
 

@@ -23,7 +23,7 @@ const actions = {
   },
     getData({commit}){
     console.count("execing....")
-      return axiosInstance.get('/chartData', {
+      return axiosInstance.get('/usage_frequency', {
           params: {
               ID: 12345
           }

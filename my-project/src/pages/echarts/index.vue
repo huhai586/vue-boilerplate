@@ -19,3 +19,6 @@
         }
     }
 </script>
+<style lang="sass">
+    @import "../../css/common.sass";
+</style>
