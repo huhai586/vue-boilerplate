@@ -1,7 +1,6 @@
 <template>
   <div id="one">
-  this id test.vue
-
+    点击选项卡，观看例子
   </div>
 </template>
 
@@ -41,12 +40,9 @@ export default {
 
 </script>
 
-<style>
-#one {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass">
+#one
+    padding:  20px
+    text-align: center
+
 </style>

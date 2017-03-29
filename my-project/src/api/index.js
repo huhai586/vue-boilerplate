@@ -12,6 +12,7 @@ axios.interceptors.request.use(function (config) {
     loding.style.display="block"
     return config;
 }, function (error) {
+    loding.style.display="none"
     // Do something with request error
     return Promise.reject(error);
 });
@@ -23,6 +24,7 @@ axios.interceptors.response.use(function (response) {
     // Do something with response data
     return response;
 }, function (error) {
+    loding.style.display="none"
     // Do something with response error
     return Promise.reject(error);
 });
